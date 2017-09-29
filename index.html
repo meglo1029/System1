@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Travelville</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+
+  	<div class="top">
+  		<div class="logo"></div>
+  		<div class="search">
+  			<input type="text" class="searchBar" placeholder="Search">
+  		</div>
+  		<a href="#menu" onclick="openNav()" >
+			  <img src="more.png" class ="menu"  alt="menu">
+		</a>
+  		<!-- <div class="menu sp"><a href="#"></a></div> -->
+  	</div>
+  	<div class="nav">
+  		<ul style="list-style: none;" class="navsection">
+  			<li class="home space"><a href="#">Home</a></li>
+  			<li class="flights space"><a href="#">Flights</a></li>
+  			<li class="cruises space"><a href="#">Cruises</a></li>
+  			<li class="destinations space"><a href="#">Destinations</a></li>
+  			<li class="business space"><a href="#">Business Travel</a></li>
+  		</ul>
+  	</div>
+
+  	<div class="overlay hideLogo" id="overlay">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<div class="overlay-menu">
+  			<ul>
+	  			<li><a href="#">Home</a></li>
+	  			<li><a href="#">Flights</a></li>
+	  			<li><a href="#">Cruises</a></li>
+	  			<li><a href="#">Destinations</a></li>
+	  			<li><a href="#">Business Travel</a></li>
+	  		</ul>
+  		</div>
+  	</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="jumbotron mainBody">
+        <div class="insideBox">
+          <span class="title">Featured</span>
+          <span class="mainheader">Yosemite National Park: Majesty Is Never Out Of Season</span>
+          <span class="destinations">Destinations</span>
+        </div>
+    </div>
+    </div>
+   </div>
+ </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  </body>
+</html>

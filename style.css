@@ -1,0 +1,216 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	max-width: 1300px;
+}
+
+.top {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 32px;
+	align-items: center;
+}
+
+
+.logo {
+	width: 203px;
+    height: 35px;
+    background: url(logo.png) no-repeat;
+    margin: 30px 50px 0 0px;
+    background-position: -16px -16px;
+}
+
+.hideLogo {
+	background: url(logo2.png) no-repeat;
+    display: none;
+    width: 155px;
+    height: 27px;
+    background-position: 43px 66px;
+}
+
+input.searchBar {
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 35.5px;
+    font-size: 16px;
+    padding-left: 17px;
+    background: url(search.png) no-repeat;
+    background-position: 273px 5px;
+    border: 1px solid gray;
+}
+
+.search {
+	margin-right: 32px;
+}
+
+button.SearchSubmit {
+    height: 25px;
+}
+
+ul.navsection {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    margin: 39px 0 18px 0;
+    cursor: pointer;
+}
+
+ul.navsection a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+li.space {
+    margin-right: 55px;
+    text-decoration: none;
+}
+
+li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.hiddennav {
+	background: #0CC3F1;
+	display: block;
+	display: none;
+}
+
+li.hide a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 15px transparent;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+li.space:hover, li.space:focus, li.space:active {
+  background-color: #0CC3F1;
+  color: white;
+}
+
+.mainBody {
+	background: url(backgroundimage.png) no-repeat top;
+    background-size: cover;
+
+}
+
+
+span.title {
+    font-size: 16px;
+    color: white;
+    display: block;
+    padding: 21px 0 18px 26px;
+}
+
+span.mainheader {
+    font-size: 36px;
+    color: white;
+    padding: 0 20px 0 26px;
+    display: block;
+}
+
+span.destinations {
+    color: #0CC3F1;
+    display: block;
+    padding: 8px 0 36px 26px;
+}
+
+/*MENU OVERLAY */
+
+.overlay {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	background-color: #0cc3f1;
+	overflow-x: hidden;
+	transition: 0.5s;
+
+}
+.overlay ul{
+	list-style: none;
+	margin-top: 125px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 26px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.menu {
+	display: none;
+}
+
+img.menu {
+    padding: 10px 10px 0 0;
+}
+
+.insideBox {
+	background: rgba(0, 0, 0, 0.5);
+	border: white solid 1px;
+	width: 50%;
+}
+
+@media (max-width: 699px) {
+	.search {
+		display: none;
+	}
+
+	.logo {
+		margin-bottom: 19px;
+	}
+
+	.mainbody {
+		padding: 10px 15px 20px 15px;
+	}
+
+	.menu {
+	    cursor: pointer;
+	    display: inline;
+	}
+
+	.insideBox {
+		width: 100%;
+	}
+
+	.nav {
+		display: none;
+	}
+}
+
+/*
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+*/
+
+}
